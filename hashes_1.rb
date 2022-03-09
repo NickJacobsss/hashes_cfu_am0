@@ -1,29 +1,30 @@
 
-Activity:
+#Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
-# file by entering the following command in your Terminal: 
+# file by entering the following command in your Terminal:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+p foods
 
-# Write code that prints all of the 'keys' of the foods variable 
+# Write code that prints all of the 'keys' of the foods variable
 # you created above:
-# YOUR CODE HERE
+puts foods.keys
 
-# Write code that prints all of the 'values' of the foods variable 
+# Write code that prints all of the 'values' of the foods variable
 # you created above:
-# YOUR CODE HERE
+puts foods.values
 
-# Write code that prints the value of the second food of the foods variable 
+# Write code that prints the value of the second food of the foods variable
 # you created above:
-# YOUR CODE HERE
+puts foods["grapes"]
 
-# Write code that adds a food to the foods hash. 
+# Write code that adds a food to the foods hash.
 # Then, print the updated hash:
-# YOUR CODE HERE
+foods["pizza"] = 2
+puts foods["pizza"]
 
 
 #-------------------
@@ -38,15 +39,19 @@ p zoo
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 # Write code that prints your email hash to the terminal.
+email = {
+  address: "nickjacobsatc@gmail.com",
+  subject: "Hashes practice",
+  signiture: "Sent from my iPad"
+}
 
-
-# Write code that prints all of the 'keys' of the email hash 
+# Write code that prints all of the 'keys' of the email hash
 # you created above:
-# YOUR CODE HERE
+print email
 
-# Write code that prints all of the 'values' of the email hash 
+# Write code that prints all of the 'values' of the email hash
 # you created above:
-# YOUR CODE HERE
+puts email.values
 
 
 #-------------------
@@ -74,7 +79,7 @@ posts = [
     timestamp: "4:37 PM August 13, 2019",
     number_likes: 0,
     comments: []
-  }, 
+  },
   {
     image_src: "./images/holiday-party.png",
     caption: "What a great holiday party omg",
@@ -88,12 +93,29 @@ p posts
 p posts[0]
 
 
-# The code snippet above shows an Array with 2 elements. Each element in the Array is a 
-# Hash. Each of those Hashes has 4 key-value pairs. This may LOOK 
+# The code snippet above shows an Array with 2 elements. Each element in the Array is a
+# Hash. Each of those Hashes has 4 key-value pairs. This may LOOK
 # a bit daunting - it's OK! You don't need to be 100% comfortable with this, but it's
 # good to have some exposure before going into Mod 1.
 
 
-# YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
+# YOU DO: Create an array of at least 3 EMAIL Hashes, using the same
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+emails = {
+  address: "nickjacobsatc@gmail.com",
+  subject: "Hashes practice",
+  signiture: "Sent from my iPad"
+},
+{
+  address: "nickjacobs@gmail.com",
+  subject: "MORE hashes practice",
+  signiture: "sent from my iPhone"
+},
+{
+  address: "nickjacobs@aim.com",
+  subject: "EVEN MORE PRACTICE",
+  signiture: "sent from a potato"
+}
+
+p emails
